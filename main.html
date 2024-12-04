@@ -1,16 +1,24 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Increment Array</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <h1>Increment Array</h1>
+  <p>Open the console to see the results.</p>
 
+  <script>
+    // Function to increment array elements
+    function incrementArray(arr) {
+      return arr.map(element => element + 1);
+    }
+
+    // Example Inputs and Outputs
+    console.log(incrementArray([1, 2, 3, 4, 5])); // Output: [2, 3, 4, 5, 6]
+    console.log(incrementArray([0, 0, 0]));       // Output: [1, 1, 1]
+    console.log(incrementArray([-2, -1, 0]));     // Output: [-1, 0, 1]
+  </script>
 </body>
-
 </html>
